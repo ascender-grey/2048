@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2048</h1>
+            <div class="score-container">
+                <div class="score-box">
+                    <div class="score-label">SCORE</div>
+                    <div class="score-value" id="score">0</div>
+                </div>
+                <div class="score-box">
+                    <div class="score-label">BEST</div>
+                    <div class="score-value" id="best-score">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <p>Join the numbers and get to the <strong>2048 tile!</strong></p>
+            <button class="new-game-btn" id="new-game">New Game</button>
+        </div>
+        
+        <div class="game-container">
+            <div class="game-board" id="game-board">
+                <!-- Game tiles will be dynamically generated here -->
+                <div class="tile-container">
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                    <div class="tile empty"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-over" id="game-over" style="display: none;">
+            <div class="game-over-content">
+                <h2>Game Over!</h2>
+                <p>Your score: <span id="final-score">0</span></p>
+                <button class="try-again-btn" id="try-again">Try Again</button>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>How to play:</h3>
+            <p>Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
